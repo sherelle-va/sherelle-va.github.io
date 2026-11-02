@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mabuhay Bakeshop | Concept design</title>
+<meta name="description" content="Concept homepage for a made-up neighborhood bakery. Designed and coded by Sherelle.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:17px/1.6 Nunito,system-ui,sans-serif;background:#FFF8EE;color:#3B2A1A}
+h1,h2,h3,nav b{font-family:Fraunces,Georgia,serif;line-height:1.15}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,248,238,.93);backdrop-filter:blur(8px);border-bottom:1px solid #EBD9BE}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-size:1.2rem;color:#B8702E}nav a{margin-left:18px;color:#3B2A1A;text-decoration:none;font-weight:700;font-size:.95rem}
+.hero{padding:64px 0 40px}.hero .w{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);margin-bottom:16px}.hero p{color:#7A6247;margin-bottom:26px;max-width:46ch}
+.btn{display:inline-block;background:#B8702E;color:#fff;padding:13px 26px;border-radius:99px;font-weight:700;text-decoration:none;transition:.2s}
+.btn:hover{background:#8F5420;transform:translateY(-2px)}
+.oven{aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6C27A,#D8903F 55%,#B8702E);position:relative;animation:bob 5s ease-in-out infinite;box-shadow:0 30px 60px rgba(184,112,46,.35)}
+.oven::after{content:"Baked at 5 AM";position:absolute;left:10%;right:10%;bottom:14%;text-align:center;font:600 1.1rem Fraunces,serif;color:#FFF8EE}
+@keyframes bob{50%{transform:translateY(-14px) rotate(3deg)}}
+section{padding:52px 0}h2{font-size:2rem;margin-bottom:22px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px}
+.c{background:#fff;border:1px solid #EBD9BE;border-radius:18px;padding:24px;transition:.25s}
+.c:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(120,80,30,.15)}
+.c p{color:#7A6247;font-size:.95rem}.c b{color:#B8702E;display:block;margin-top:8px}
+.steps{counter-reset:s}.steps .c::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#B8702E;color:#fff;font-weight:700;margin-bottom:10px}
+.visit{background:#F3E2C8;border-radius:24px;padding:36px;display:grid;gap:6px}
+footer{padding:30px 0;text-align:center;font-size:.88rem;color:#7A6247}footer a{color:#B8702E;font-weight:700}
+.hid{opacity:0;transform:translateY(24px)}.rv{transition:opacity .7s,transform .7s}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}.oven{max-width:260px}nav a{margin-left:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hid{opacity:1;transform:none}}
+</style></head><body>
+<nav><div class="w"><b>Mabuhay Bakeshop</b><div><a href="#menu">Menu</a><a href="#order">Order</a><a href="#visit">Visit</a></div></div></nav>
+<header class="hero"><div class="w"><div>
+<h1>Fresh bread, baked every morning.</h1>
+<p>Pandesal, ensaymada and cakes for pickup or delivery. Warm from the oven, wrapped by neighbors you know.</p>
+<a class="btn" href="#order">Order for pickup</a></div><div class="oven" aria-hidden="true"></div></div></header>
+<main>
+<section id="menu"><div class="w"><h2>Today's menu</h2><div class="g">
+<div class="c rv"><h3>Pandesal</h3><p>Soft, lightly sweet rolls. Sold by the dozen.</p><b>₱60 per 10</b></div>
+<div class="c rv"><h3>Ensaymada</h3><p>Buttery, topped with sugar and cheese.</p><b>₱35 each</b></div>
+<div class="c rv"><h3>Cheese bread</h3><p>Baked with a melted cheese center.</p><b>₱25 each</b></div>
+<div class="c rv"><h3>Ube cake slice</h3><p>Light chiffon with ube cream.</p><b>₱90 per slice</b></div>
+<div class="c rv"><h3>Monay</h3><p>Dense, golden and great with coffee.</p><b>₱15 each</b></div>
+<div class="c rv"><h3>Whole cakes</h3><p>Order one day ahead for birthdays.</p><b>From ₱650</b></div></div></div></section>
+<section id="order"><div class="w"><h2>Order in three steps</h2><div class="g steps">
+<div class="c rv"><h3>Choose</h3><p>Pick your bread from the menu above.</p></div>
+<div class="c rv"><h3>Message us</h3><p>Send your order and pickup time by text or chat.</p></div>
+<div class="c rv"><h3>Pick up</h3><p>Come by, or ask for delivery in the neighborhood.</p></div></div></div></section>
+<section id="visit"><div class="w"><div class="visit rv"><h2>Visit us</h2>
+<p><strong>Open every day:</strong> 5:00 AM to 8:00 PM</p><p><strong>Address:</strong> 12 Sample Street, Sample Town</p><p><strong>Phone:</strong> 0900 000 0000 (sample)</p></div></div></section></main>
+<footer><div class="w">Concept design for a made-up business, by Sherelle. <a href="index.html#portfolio">Back to portfolio</a></div></footer>
+<script>
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.remove("hid");o.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e){e.classList.add("hid");o.observe(e)});
+</script></body></html>

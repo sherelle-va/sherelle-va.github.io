@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tala Photography | Concept design</title>
+<meta name="description" content="Concept portfolio page for a made-up photographer. Designed and coded by Sherelle.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:17px/1.65 Jost,system-ui,sans-serif;background:#F3F0FA;color:#2A2340}
+h1,h2,h3,nav b{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.1}
+.w{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(243,240,250,.94);backdrop-filter:blur(8px);border-bottom:1px solid #DDD6EE}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-size:1.5rem;color:#5B4B8A}nav a{margin-left:18px;color:#2A2340;text-decoration:none;font-weight:500;font-size:.95rem}
+.hero{padding:76px 0 40px;text-align:center}
+h1{font-size:clamp(2.6rem,8vw,5.2rem);margin-bottom:14px}.hero p{color:#6A5F8A;max-width:44ch;margin:0 auto 26px}
+.btn{display:inline-block;background:#5B4B8A;color:#fff;padding:12px 28px;border-radius:99px;font:inherit;font-weight:500;text-decoration:none;transition:.2s}
+.btn:hover{background:#463872;transform:translateY(-2px)}
+.f{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.f button{font:inherit;font-weight:500;padding:8px 18px;border-radius:99px;border:1px solid #BDB2DA;background:transparent;color:#2A2340;cursor:pointer;transition:.2s}
+.f button:hover,.f button.on{background:#5B4B8A;color:#fff;border-color:#5B4B8A}
+section{padding:44px 0}h2{font-size:2.3rem;margin-bottom:18px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.t{border-radius:16px;overflow:hidden;position:relative;aspect-ratio:var(--r,1);background:var(--g);animation:fade .5s both}
+.t span{position:absolute;inset:auto 0 0 0;padding:34px 16px 14px;color:#fff;font-weight:500;background:linear-gradient(transparent,rgba(30,20,60,.65));transform:translateY(100%);transition:.3s}
+.t:hover span,.t:focus-within span{transform:none}.t:hover{filter:saturate(1.2)}
+.t::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.4),transparent 55%);transition:transform .6s}.t:hover::before{transform:scale(1.4)}
+@keyframes fade{from{opacity:0;transform:scale(.94)}}
+.pk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.c{background:#fff;border:1px solid #DDD6EE;border-radius:18px;padding:26px;transition:.25s}.c:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(91,75,138,.18)}
+.c h3{font-size:1.6rem}.c b{display:block;color:#5B4B8A;margin:6px 0}.c p{color:#6A5F8A;font-size:.95rem}
+.ct{text-align:center;background:#2A2340;color:#fff;border-radius:24px;padding:44px 22px}.ct p{margin-bottom:20px;color:#CFC6E8}.ct .btn{background:#fff;color:#2A2340}
+footer{padding:30px 0;text-align:center;font-size:.88rem;color:#6A5F8A}footer a{color:#5B4B8A;font-weight:500}
+@media(max-width:700px){.gal{grid-template-columns:1fr}nav a{margin-left:12px}.t span{transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<nav><div class="w"><b>Tala Photography</b><div><a href="#work">Work</a><a href="#packages">Packages</a><a href="#contact">Contact</a></div></div></nav>
+<header class="hero"><div class="w"><h1>Moments, framed with care.</h1>
+<p>Weddings, portraits and events, photographed in natural light and delivered within two weeks.</p>
+<a class="btn" href="#work">View the work</a></div></header>
+<main>
+<section id="work"><div class="w"><h2>Selected work</h2>
+<div class="f" role="group" aria-label="Filter photos"><button class="on" data-f="all">All</button><button data-f="Weddings">Weddings</button><button data-f="Portraits">Portraits</button><button data-f="Events">Events</button></div>
+<div class="gal" id="gal"></div>
+<p style="margin-top:14px;font-size:.88rem;color:#6A5F8A">Color tiles stand in for photos in this concept design.</p></div></section>
+<section id="packages"><div class="w"><h2>Packages</h2><div class="pk">
+<div class="c"><h3>Portrait</h3><b>From ₱3,500</b><p>One hour, one location, 20 edited photos.</p></div>
+<div class="c"><h3>Event</h3><b>From ₱8,000</b><p>Up to four hours of coverage, 80 edited photos.</p></div>
+<div class="c"><h3>Wedding</h3><b>From ₱25,000</b><p>Full-day coverage and an online gallery.</p></div></div></div></section>
+<section id="contact"><div class="w"><div class="ct"><h2 style="color:#fff">Let's plan your shoot.</h2><p>Tell me the date and the place, and I will reply with open slots.</p><a class="btn" href="mailto:hello@talaphoto.example">hello@talaphoto.example</a></div></div></section></main>
+<footer><div class="w">Concept design for a made-up business, by Sherelle. <a href="index.html#portfolio">Back to portfolio</a></div></footer>
+<script>
+var T=[["Weddings","First dance",1.25,"#C9A7D9,#7C5BA8"],["Portraits","Window light",.8,"#F2B5A0,#C9627F"],["Events","Birthday toast",1,"#9FD3D0,#3E8C9A"],["Portraits","Golden hour",1,"#F6D58E,#D9885B"],["Weddings","The vows",.8,"#B7C4F0,#5B6FC4"],["Events","Family reunion",1.25,"#A8DDB5,#4F9A74"]],g=document.getElementById("gal");
+T.forEach(function(t,i){var d=document.createElement("figure");d.className="t";d.dataset.c=t[0];d.style.cssText="--r:"+t[2]+";--g:linear-gradient(145deg,"+t[3]+");animation-delay:"+i*70+"ms";d.innerHTML="<span>"+t[1]+" · "+t[0]+"</span>";g.appendChild(d)});
+document.querySelectorAll(".f button").forEach(function(b){b.addEventListener("click",function(){
+document.querySelectorAll(".f button").forEach(function(x){x.classList.toggle("on",x===b)});
+document.querySelectorAll(".t").forEach(function(t){var show=b.dataset.f==="all"||t.dataset.c===b.dataset.f;t.hidden=!show;if(show){t.style.animation="none";void t.offsetWidth;t.style.animation=""}})})});
+</script></body></html>

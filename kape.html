@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kape Kuwento Coffee | Concept design</title>
+<meta name="description" content="Concept homepage for a made-up coffee shop. Designed and coded by Sherelle.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:17px/1.6 Karla,system-ui,sans-serif;background:#1F1511;color:#F3E7DA}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.15}
+.w{max-width:960px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(31,21,17,.93);backdrop-filter:blur(8px);border-bottom:1px solid #3A2A22}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font:600 1.2rem 'Playfair Display',serif;color:#D9A066}nav a{margin-left:18px;color:#F3E7DA;text-decoration:none;font-weight:700;font-size:.95rem}
+nav a:hover{color:#D9A066}
+.hero{text-align:center;padding:80px 0 60px}
+.cup{width:90px;height:64px;margin:0 auto 34px;border:3px solid #D9A066;border-radius:4px 4px 40px 40px;position:relative}
+.cup i{position:absolute;top:-34px;width:6px;height:26px;border-radius:6px;background:#D9A066;opacity:0;animation:steam 3s infinite}
+.cup i:nth-child(1){left:22px}.cup i:nth-child(2){left:40px;animation-delay:.8s}.cup i:nth-child(3){left:58px;animation-delay:1.6s}
+@keyframes steam{0%{opacity:0;transform:translateY(10px)}40%{opacity:.8}100%{opacity:0;transform:translateY(-16px) scaleY(1.3)}}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);margin-bottom:18px}.hero p{color:#C9B6A4;max-width:46ch;margin:0 auto 28px}
+.btn{display:inline-block;background:#D9A066;color:#1F1511;padding:13px 28px;border-radius:6px;font-weight:700;text-decoration:none;transition:.2s}
+.btn:hover{background:#F0BE85;transform:translateY(-2px)}
+section{padding:52px 0}h2{font-size:2rem;margin-bottom:24px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:6px 48px}
+.menu li{list-style:none;display:flex;gap:10px;align-items:baseline;padding:10px 0}
+.menu li::after{content:"";order:2;flex:1;border-bottom:1px dotted #6B4F3F}.menu li span:last-child{order:3;color:#D9A066;font-weight:700}
+.menu small{display:block;color:#C9B6A4}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.story p{color:#C9B6A4}.hours{background:#2A1D17;border:1px solid #3A2A22;border-radius:14px;padding:26px}
+.hours div{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #3A2A22}.hours div:last-child{border:0}
+footer{padding:30px 0;text-align:center;font-size:.88rem;color:#C9B6A4}footer a{color:#D9A066;font-weight:700}
+.hid{opacity:0;transform:translateX(-24px)}.rv{transition:opacity .7s,transform .7s}
+@media(max-width:720px){.menu,.story{grid-template-columns:1fr}nav a{margin-left:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hid{opacity:1;transform:none}}
+</style></head><body>
+<nav><div class="w"><b>Kape Kuwento</b><div><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#hours">Hours</a></div></div></nav>
+<header class="hero"><div class="w"><div class="cup" aria-hidden="true"><i></i><i></i><i></i></div>
+<h1>Good coffee. Better stories.</h1>
+<p>A small corner café where every cup comes with a seat, a chat and time to slow down.</p>
+<a class="btn" href="#menu">See the menu</a></div></header>
+<main>
+<section id="menu"><div class="w"><h2>The menu</h2><ul class="menu">
+<li class="rv"><span>Espresso<small>Double shot, bold and smooth</small></span><span>₱90</span></li>
+<li class="rv"><span>Café latte<small>Espresso with steamed milk</small></span><span>₱130</span></li>
+<li class="rv"><span>Cold brew<small>Steeped 16 hours, served over ice</small></span><span>₱140</span></li>
+<li class="rv"><span>Spanish latte<small>Sweetened with condensed milk</small></span><span>₱150</span></li>
+<li class="rv"><span>Barako drip<small>Strong local beans</small></span><span>₱100</span></li>
+<li class="rv"><span>Banana bread<small>Baked fresh each morning</small></span><span>₱80</span></li></ul></div></section>
+<section id="story"><div class="w story"><div class="rv"><h2>Our story</h2><p>Kape Kuwento started as a plan to give neighbors a place to talk over a good cup. We pick our beans from local growers and brew them the same way every day, so your favorite tastes like your favorite.</p></div>
+<div class="hours rv" id="hours"><h3 style="margin-bottom:10px">Opening hours</h3>
+<div><span>Monday to Friday</span><span>7 AM to 9 PM</span></div><div><span>Saturday</span><span>8 AM to 10 PM</span></div><div><span>Sunday</span><span>8 AM to 6 PM</span></div>
+<p style="margin-top:14px;font-size:.95rem">12 Sample Street, Sample Town<br>0900 000 0000 (sample)</p></div></div></section></main>
+<footer><div class="w">Concept design for a made-up business, by Sherelle. <a href="index.html#portfolio">Back to portfolio</a></div></footer>
+<script>
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.remove("hid");o.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e){e.classList.add("hid");o.observe(e)});
+</script></body></html>

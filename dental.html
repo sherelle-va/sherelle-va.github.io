@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrightSmile Dental | Concept design</title>
+<meta name="description" content="Concept homepage for a made-up dental clinic. Designed and coded by Sherelle.">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font:17px/1.65 Manrope,system-ui,sans-serif;background:#F6FAFD;color:#12304A}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.95);border-bottom:1px solid #DCE9F3}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:62px}
+nav b{font-weight:800;font-size:1.15rem;color:#2B7FB8}nav a{margin-left:18px;color:#12304A;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn{display:inline-block;background:#2B7FB8;color:#fff;padding:13px 26px;border-radius:12px;font:inherit;font-weight:800;text-decoration:none;border:0;cursor:pointer;transition:.2s}
+.btn:hover{background:#1F6595;transform:translateY(-2px)}
+.hero{padding:60px 0 40px}.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+h1{font-size:clamp(2.1rem,5.4vw,3.5rem);line-height:1.1;font-weight:800;margin-bottom:16px}.hero p{color:#4B6A82;margin-bottom:24px;max-width:46ch}
+.book{background:#fff;border:1px solid #DCE9F3;border-radius:20px;padding:26px;box-shadow:0 20px 44px rgba(43,127,184,.14);animation:rise .8s both}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+.book h2{font-size:1.25rem;margin-bottom:14px}.book label{display:grid;gap:4px;font-weight:600;font-size:.9rem;margin-bottom:12px}
+.book input,.book select{font:inherit;padding:11px 12px;border:1px solid #BFD3E3;border-radius:10px;width:100%}
+.book .btn{width:100%}#ok{margin-top:12px;color:#1F7A4D;font-weight:600;font-size:.92rem}
+section{padding:48px 0}h2{font-size:1.9rem;margin-bottom:22px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px}
+.c{background:#fff;border:1px solid #DCE9F3;border-radius:16px;padding:24px;transition:.25s}
+.c:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(43,127,184,.16)}
+.c i{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#E3F1FA;color:#2B7FB8;font-style:normal;font-weight:800;margin-bottom:12px}
+.c h3{font-size:1.1rem;margin-bottom:4px}.c p{color:#4B6A82;font-size:.95rem}
+.info{background:#12304A;color:#fff;border-radius:22px;padding:34px;display:grid;gap:6px}
+footer{padding:30px 0 90px;text-align:center;font-size:.88rem;color:#4B6A82}footer a{color:#2B7FB8;font-weight:800}
+.fab{display:none}
+.hid{opacity:0;transform:translateY(24px)}.rv{transition:opacity .7s,transform .7s}
+@media(max-width:760px){.hero .w{grid-template-columns:1fr}nav a{display:none}
+.fab{display:block;position:fixed;left:16px;right:16px;bottom:16px;z-index:9;text-align:center;box-shadow:0 10px 28px rgba(18,48,74,.35)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hid{opacity:1;transform:none}}
+</style></head><body>
+<nav><div class="w"><b>BrightSmile Dental</b><div><a href="#services">Services</a><a href="#visit">Visit</a><a class="btn" href="#book" style="color:#fff;margin-left:18px;padding:9px 18px">Book a visit</a></div></div></nav>
+<header class="hero"><div class="w"><div>
+<h1>Gentle care for the whole family.</h1>
+<p>Check-ups, cleanings and braces in a calm clinic where nobody rushes you. Tell us what you need and we will find a time that works.</p>
+<a class="btn" href="#services">See our services</a></div>
+<form class="book" id="book"><h2>Book a visit</h2>
+<label>Your name<input required autocomplete="name"></label>
+<label>Preferred day<select><option>Weekday morning</option><option>Weekday afternoon</option><option>Saturday</option></select></label>
+<label>Service<select><option>Check-up</option><option>Cleaning</option><option>Braces</option><option>Whitening</option></select></label>
+<button class="btn" type="submit">Request a time</button><p id="ok" role="status"></p></form></div></header>
+<main>
+<section id="services"><div class="w"><h2>Our services</h2><div class="g">
+<div class="c rv"><i>C</i><h3>Check-ups</h3><p>Regular exams to catch small problems early.</p></div>
+<div class="c rv"><i>L</i><h3>Cleaning</h3><p>Gentle scaling and polishing for fresh teeth.</p></div>
+<div class="c rv"><i>B</i><h3>Braces</h3><p>Straighter teeth with clear check-in plans.</p></div>
+<div class="c rv"><i>W</i><h3>Whitening</h3><p>A brighter smile in a single visit.</p></div></div></div></section>
+<section id="visit"><div class="w"><div class="info rv"><h2 style="color:#fff;margin-bottom:8px">Visit the clinic</h2>
+<p><strong>Hours:</strong> Monday to Saturday, 9 AM to 6 PM</p><p><strong>Address:</strong> 12 Sample Street, Sample Town</p><p><strong>Phone:</strong> 0900 000 0000 (sample)</p></div></div></section></main>
+<footer><div class="w">Concept design for a made-up business, by Sherelle. <a href="index.html#portfolio">Back to portfolio</a></div></footer>
+<a class="btn fab" href="#book">Book a visit</a>
+<script>
+document.getElementById("book").addEventListener("submit",function(e){e.preventDefault();document.getElementById("ok").textContent="This is a concept design, so no request was sent."});
+var o=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.remove("hid");o.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(e){e.classList.add("hid");o.observe(e)});
+</script></body></html>
